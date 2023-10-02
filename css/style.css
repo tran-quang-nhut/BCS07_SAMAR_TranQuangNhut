@@ -676,6 +676,7 @@ footer::before{
 .footer__social a:hover{
     background: #f55f8d;
 }
+
 /* backToTop */
 .backtotop{
     width: 50px;
@@ -736,4 +737,97 @@ footer::before{
     51% {
         opacity: 1;
     } 
+}
+
+/* RESPONSIVE */
+@media (max-width: 1878px) {
+    .header__content .nav_off {
+        display: none;
+    }
+}
+
+@media (max-width: 972px) {
+/* HEADER */
+    .header__content {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .header__content .logo {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__content nav {
+        justify-content: center;
+    }
+
+    .header__content nav ul li {
+        padding: 24px 15px;
+    }
+
+    .header__content .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/* END HEADER */
+/* BANNER */
+    .banner__content {
+        padding-top: 40px;
+    }
+/* END BANNER */
+}
+
+@media (max-width: 679px) {
+/* HEADER */
+    .header__content nav {
+        display: none;
+    }
+
+    .header__content .nav_off {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header__content .nav_off button {
+        border: none;
+    }
+
+    .header__content .nav_off .offcanvas-header {
+        text-align: center;
+    }
+
+    .header__content .nav_off .offcanvas-body ul li a {
+        color: black;
+    }
+    .header__content .nav_off .offcanvas-body ul li a:hover {
+        color: #f55f8d
+    }
+
+    .header__content .nav_off .offcanvas-body ul li {
+        margin-bottom: 20px;
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header__content .nav_off .offcanvas-body ul {
+        padding-left: 0;
+    }
+/* END HEADER */
+/* BANNER */
+    .banner .banner__content {
+        padding-top: 67px; 
+        display: block;
+    }
+/* END BANNER */
+/* FEATURES */
+    .features .features__main {
+        display: block;
+    }
+/* END FEATURES */
 }
